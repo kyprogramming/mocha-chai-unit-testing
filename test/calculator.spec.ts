@@ -10,6 +10,7 @@ describe('Test Calculator Class', ()=>{
         const result = calc.add(2,3);
         // assert
         expect(result).to.equal(5);
+        
     });
     it('should return substract',()=>{
         // arrange 
