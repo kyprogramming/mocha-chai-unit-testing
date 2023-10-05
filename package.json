@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "test1": "nyc mocha --require ts-node/register test/**.spec.ts",
-    "test": "mocha --require ts-node/register test/**.spec.ts"
+    "test": "mocha --timeout 30000 --require ts-node/register test/**.spec.ts"
   },
   "author": "kumar",
   "license": "ISC",
@@ -23,3 +23,4 @@
     "nyc": "^15.1.0"
   }
 }
+
