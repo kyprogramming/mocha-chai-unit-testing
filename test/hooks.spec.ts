@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import Calculator from "../src/calculator";
 
-describe.only("hooks test", () => {
+describe("hooks test", () => {
 
   let calc:Calculator;
   before(() => {
