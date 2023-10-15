@@ -2,7 +2,7 @@ import { expect } from "chai";
 import Calculator from "../src/calculator";
 import sinon, { SinonMatcher, SinonMock, SinonSpy, SinonStub } from "sinon";
 
-describe.only("Spy Stub and Mock Tests", () => {
+describe("Spy Stub and Mock Tests", () => {
   let calc: Calculator;
   let spy: SinonSpy;
   let stub: SinonStub;
