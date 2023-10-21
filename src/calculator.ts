@@ -1,3 +1,6 @@
+import axios from "axios";
+
+const baseUrl = 'https://jsonplaceholder.typicode.com';
 class Calculator{
     add(a:number , b:number):number{
         this.logMessage('logging add function');
@@ -33,5 +36,14 @@ class Calculator{
         },1000);
        })
     }
+
+    async getUser(){
+        return await axios.get(`${baseUrl}/users/1`);
+    }
+
+    async saveUser(userPayload:any){
+        return await axios.post(`${baseUrl}/users`, userPayload)
+    };
+
 }
 export default Calculator;

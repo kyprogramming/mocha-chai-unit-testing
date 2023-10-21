@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import Calculator from "../src/calculator"
 
-describe.only('ASYNC AWIAT AND PROMISE TEST SUITE', ()=>{
+describe('ASYNC AWIAT AND PROMISE TEST SUITE', ()=>{
     let calc:Calculator;
 
     it('should work with async and awiat',async ()=>{
