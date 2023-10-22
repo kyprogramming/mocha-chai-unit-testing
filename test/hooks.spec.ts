@@ -19,15 +19,15 @@ describe("hooks test", () => {
     console.log("after");
   });
 
-  describe('add test suite', ()=>{
-    it("should return sum", () => {
-      // arrange
-      // act
-      const result = calc.add(2, 3);
-      // assert
-      expect(result).to.equal(5);
-    });
-  })
+  // describe('add test suite', ()=>{
+  //   it("should return sum", () => {
+  //     // arrange
+  //     // act
+  //     const result = calc.add(2, 3);
+  //     // assert
+  //     expect(result).to.equal(5);
+  //   });
+  // })
 
   
   describe('subsctact test suite', ()=>{

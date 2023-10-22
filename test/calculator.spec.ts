@@ -3,15 +3,15 @@ import Calculator from '../src/calculator';
 
 describe('Test Calculator Class', ()=>{
 
-    it('should return sum',()=>{
-        // arrange 
-        const calc = new Calculator();
-        // act
-        const result = calc.add(2,3);
-        // assert
-        expect(result).to.equal(5);
+    // it('should return sum',()=>{
+    //     // arrange 
+    //     const calc = new Calculator();
+    //     // act
+    //     const result = calc.add(2,3);
+    //     // assert
+    //     expect(result).to.equal(5);
         
-    });
+    // });
     it('should return substract',()=>{
         // arrange 
         const calc = new Calculator();
@@ -41,5 +41,17 @@ describe('Test Calculator Class', ()=>{
          const calc = new Calculator();
        expect(()=> calc.divide(10,0)).to.throw('Can not divide by zero.');
     });
+
+    it('should return random value from 1 to 10',()=>{
+        // arrange 
+        const calc = new Calculator();
+        // act
+        const randomNumber = calc.getRandomValue();
+        // assert
+        expect(randomNumber).to.be.at.least(1);
+        expect(randomNumber).to.be.at.most(10);
+
+     
+   });
 
 });

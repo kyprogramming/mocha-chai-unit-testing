@@ -1,0 +1,12 @@
+{
+  "include": ["src/**/*.ts"],
+  "exclude": ["test/**.spec.ts"],
+  "extension": [".ts"],
+  "reporter": ["lcov","text", "text-summary"],
+  "check-coverage": true,
+  "lines": 95,
+  "statements": 95,
+  "functions": 95,
+  "branches": 95,
+  "report-dir": "./.test_report"
+}

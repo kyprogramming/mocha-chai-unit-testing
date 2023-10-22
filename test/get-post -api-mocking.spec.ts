@@ -3,7 +3,7 @@ import Calculator from "../src/calculator";
 import nock from "nock";
 
 const baseUrl = 'https://jsonplaceholder.typicode.com';
-describe.only("API Testing", ()=>{
+describe("API Testing", ()=>{
   it("should make a GET request from API", async () => {
     // arrange
     const calc = new Calculator();
