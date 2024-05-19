@@ -45,5 +45,8 @@ class Calculator{
         return await axios.post(`${baseUrl}/users`, userPayload)
     };
 
+    anonmyousAdd = (a:number , b:number) => a+b;
+
+
 }
 export default Calculator;
