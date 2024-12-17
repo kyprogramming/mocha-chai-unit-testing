@@ -1,26 +1,26 @@
 {
-  "name": "mocha-chai-unit-testing",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
-  "scripts": {
-    "test:coverage": "nyc mocha --require ts-node/register test/**.spec.ts",
-    "test": "mocha --timeout 30000 --require ts-node/register test/**.spec.ts"
-  },
-  "author": "kumar",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/chai": "^4.3.5",
-    "@types/mocha": "^10.0.1",
-    "@types/sinon": "^10.0.18",
-    "chai": "^4.3.7",
-    "mocha": "^10.2.0",
-    "nyc": "^15.1.0",
-    "sinon": "^16.0.0"
-  },
-  "dependencies": {
-    "axios": "^1.5.1",
-    "nock": "^13.3.6",
-    "ts-node": "^10.9.2"
-  }
+    "name": "mocha-chai-unit-testing",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "test:coverage": "nyc mocha --import=tsx test/**.spec.ts",
+        "test": "mocha --timeout 30000 --import=tsx test/**.spec.ts"
+    },
+    "author": "kumar",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/chai": "^5.0.1",
+        "@types/mocha": "^10.0.10",
+        "@types/sinon": "^17.0.3",
+        "chai": "^5.1.2",
+        "mocha": "^11.0.1",
+        "nock": "^13.5.6",
+        "nyc": "^17.1.0",
+        "sinon": "^19.0.2",
+        "tsx": "^4.19.2"
+    },
+    "dependencies": {
+        "axios": "^1.7.9"
+    }
 }
